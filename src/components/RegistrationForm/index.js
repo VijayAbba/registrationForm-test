@@ -36,7 +36,8 @@ class RegistrationForm extends Component {
     }
   }
 
-  onSubmit = () => {
+  onSubmit = event => {
+    event.preventDefault()
     const {firstName, lastName} = this.state
 
     if (firstName !== '' && lastName !== '') {
@@ -52,7 +53,7 @@ class RegistrationForm extends Component {
     const {isFirstEmpty, isLastEmpty, firstName, lastName} = this.state
 
     return (
-      <div className="registration-form">
+      <form className="registration-form" onSubmit={this.onSubmit}>
         <div className="label-input-card">
           <label htmlFor="FirstName">FIRST NAME</label>
           <input
@@ -77,10 +78,10 @@ class RegistrationForm extends Component {
           />
           {isLastEmpty && <p className="req-style">Required</p>}
         </div>
-        <button onClick={this.onSubmit} className="" type="submit">
+        <button className="" type="submit">
           Submit
         </button>
-      </div>
+      </form>
     )
   }
 

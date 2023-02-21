@@ -1,0 +1,63 @@
+/* Write your CSS code here */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.heading {
+  color: #ea580c;
+}
+.registration-form {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border-radius: 8px;
+}
+
+.label-input-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  outline: none;
+  border: 1px solid silver;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  border-width: 0px;
+  background-color: #ea580c;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.req-style {
+  color: #ff0b37;
+}
+
+.red-focus {
+  background-color: #fef2f4;
+  border: 2px solid #ff0b37;
+}
